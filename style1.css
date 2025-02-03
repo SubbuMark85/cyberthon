@@ -1,0 +1,73 @@
+body{
+    background-image: url("https://img.freepik.com/free-photo/3d-network-connections-design-with-plexus-connecting-lines-dots_1048-11879.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.bg-body-tertiary{
+    background: none !important;
+    text-align: end;
+}
+.nav-link{
+    color: white;
+    font-size: 18px;
+}
+.nav-item{
+    display: flex;
+}
+.hello{
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+}
+.hi{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.c1{
+    border: none;
+    font-size: 1.4rem;
+    margin: 0px 1rem 0px 0.5rem;
+    width: 130px;
+}
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
+    justify-content: end;
+}
+.nav-link:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+.bed{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+.beds{
+    color: white;
+    margin-top: 75px;
+    margin-right: 100px;
+}
+ /* Animation for list items */
+ @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.beds ul li {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+.beds ul li:nth-child(1) { animation-delay: 0.2s; }
+.beds ul li:nth-child(2) { animation-delay: 0.4s; }
+.beds ul li:nth-child(3) { animation-delay: 0.6s; }
+.beds ul li:nth-child(4) { animation-delay: 0.8s; }
+.beds ul li:nth-child(5) { animation-delay: 1s; }
+.beds ul li:nth-child(6) { animation-delay: 1.2s; }
+.beds ul li:nth-child(7) { animation-delay: 1.4s; }

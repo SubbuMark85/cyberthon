@@ -1,0 +1,99 @@
+/* General styles */
+body {
+    background-color: #131313;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.bg-body-tertiary{
+    background: none !important;
+    text-align: end;
+}
+.nav-link{
+    color: white;
+    font-size: 18px;
+}
+.nav-item{
+    display: flex;
+}
+.hello{
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+}
+.hi{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.c1{
+    border: none;
+    font-size: 1.4rem;
+    margin: 0px 1rem 0px 0.5rem;
+    width: 130px;
+}
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
+    justify-content: end;
+}
+.nav-link:hover{
+    background-color: #131313;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(255, 71, 71, 0.3);
+}
+.bed{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+/* Service Card Styles */
+.service-card {
+    background: #181818;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 1s ease;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(30px);
+    position: relative;
+}
+/* Icon Styling */
+.service-card .icon img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 15px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+/* Card Hover Effects */
+.service-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 10px 20px rgba(255, 71, 71, 0.3);
+}
+
+/* Icon Color Change on Hover */
+.service-card:hover .icon img {
+    filter: grayscale(0%);
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Link Styling */
+.service-card a {
+    color: #ff4747;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
